@@ -1,5 +1,6 @@
 import my_oled
 import time
+from lib import gfx
 
 state = 0
 
@@ -12,13 +13,24 @@ while True:
     
     if state == 1:
         my_oled.print_text("something else",0,0)
+    
+    if state == 2:
+        oled.fill(0)
+        my_oled.oled.line(0,0,10,10,1)
+        oled.show()
+    
+    if state == 3:
+        oled.fill(0)
+        my_oled.graphics.fill_rect(0,0,10,10,1)
+        oled.show
 
-        
-    time.sleep(1)
+
 
     state = state + 1
     
     if state >= 4:
         state = 0
+
+    time.sleep(1)
 
     
