@@ -1,6 +1,9 @@
+from machine import Pin, SoftI2C
+import ssd1306
+from time import sleep
 import my_oled
 import time
-from lib import gfx
+import gfx
 
 state = 0
 
