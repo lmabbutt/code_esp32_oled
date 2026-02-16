@@ -15,14 +15,14 @@ while True:
         my_oled.print_text("something else",0,0)
     
     if state == 2:
-        oled.fill(0)
+        my_oled.oled.fill(0)
         my_oled.oled.line(0,0,10,10,1)
-        oled.show()
+        my_oled.oled.show()
     
     if state == 3:
-        oled.fill(0)
+        my_oled.oled.fill(0)
         my_oled.graphics.fill_rect(0,0,10,10,1)
-        oled.show
+        my_oled.oled.show()
 
 
 
